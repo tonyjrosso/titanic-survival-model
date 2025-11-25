@@ -68,8 +68,8 @@ jupyter notebook notebooks/Titanic_Demo.ipynb
 3. Or train a new model programmatically
 ```
 from model.training import train
-from data.loading_data import load_titanic
-from model.registry import load_model
+from data.loader import load_titanic
+from sklearn.linear_model import LogisticRegression
 
 X, y = load_titanic()
 model, metrics = train(LogisticRegression(), X, y)
