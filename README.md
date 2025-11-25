@@ -15,7 +15,7 @@ This project uses the Titanic dataset to build a logistic regression classifier 
 ## Project Structure
 
 ```
-project/
+titanic_survival_model/
 │
 ├── model/
 │   ├── inference.py          # predict() and predict_with_report()
