@@ -1,0 +1,6 @@
+paths:
+  artifact_dir: "titanic_survival_model/model/artifacts/"
+
+training:
+  test_size: 0.2
+  random_state: 42
