@@ -10,6 +10,8 @@ A clean, production-style machine learning project demonstrating:
 - clean model retraining workflow
 - dataset loading and preprocessing
 
+See the [notebook](https://github.com/tonyjrosso/titanic-survival-model/blob/main/titanic_survival_model/notebooks/Titanic%20Survival%20Model%20demo.ipynb) for a quick walkthrough.
+
 This project uses the Titanic dataset to build a logistic regression classifier predicting passenger survival.
 
 ## Project Structure
