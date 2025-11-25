@@ -14,6 +14,7 @@ This project uses the Titanic dataset to build a logistic regression classifier 
 
 ## Project Structure
 
+```
 project/
 │
 ├── model/
@@ -39,9 +40,9 @@ project/
 │   └── Titanic_Demo.ipynb    # walkthrough for training + evaluation
 │
 └── requirements.txt
+```
 
-
-📊 Example Outputs
+## Example Outputs
 
 The notebook walks through:
 
@@ -51,7 +52,7 @@ The notebook walks through:
 - monitoring score distribution
 - evaluating performance history over retraining cycles
 
-Example figures (ROC curve, PR curve, score distribution etc.) are produced using metrics/visualization.py.
+Example figures (ROC curve, PR curve, score distribution etc.) are produced using `metrics/visualization.py`.
 
 ## How to Run
 1. Install dependencies
