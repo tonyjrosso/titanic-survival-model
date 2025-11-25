@@ -56,18 +56,24 @@ Example figures (ROC curve, PR curve, score distribution etc.) are produced usin
 
 ## How to Run
 1. Install dependencies
-> pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 
 2. Run the demo notebook
-> jupyter notebook notebooks/Titanic_Demo.ipynb
+```
+jupyter notebook notebooks/Titanic_Demo.ipynb
+```
 
 3. Or train a new model programmatically
->from model.training import train
->from data.loading_data import load_titanic
->from model.registry import load_model
->
->X, y = load_titanic()
->model, metrics = train(LogisticRegression(), X, y)
+```
+from model.training import train
+from data.loading_data import load_titanic
+from model.registry import load_model
+
+X, y = load_titanic()
+model, metrics = train(LogisticRegression(), X, y)
+```
 
 ## Configuration
 
