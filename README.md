@@ -32,7 +32,7 @@ titanic_survival_model/
 │   └── schema.py             # schemas for metrics
 │
 ├── data/
-│   └── loader.py       # loads + preprocesses Titanic dataset
+│   └── loader.py             # loads + preprocesses Titanic dataset
 │
 ├── config/
 │   ├── settings.yaml         # default training + path configs
