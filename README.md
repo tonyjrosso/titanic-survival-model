@@ -10,7 +10,7 @@
 - クリーンなモデル再学習ワークフロー
 - データセットの読み込みと前処理
 
-**重要**: この[ノートブック](https://github.com/tonyjrosso/titanic-survival-model/blob/main/titanic_survival_model/notebooks/Titanic%20Survival%20Model%20demo.ipynb)には、プロジェクトに関する詳細な議論が記載されています。
+**重要**: [ノートブック](https://github.com/tonyjrosso/titanic-survival-model/tree/main/titanic_survival_model/notebooks)には、プロジェクトに関する詳細な議論が記載されています。
 
 このプロジェクトでは、タイタニック号のデータセットを使用して、乗客の生存を予測するロジスティック回帰分類器を構築します。
 
