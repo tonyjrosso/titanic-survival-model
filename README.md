@@ -1,20 +1,20 @@
-# Titanic Survival Prediction – Modular ML Pipeline
+# 機械学習モデル更新時の性能検証
 
-A clean, production-style machine learning project demonstrating:
+以下の機能を備えた、クリーンで本番環境レベルの機械学習プロジェクトです。
 
-- modular project architecture
-- reproducible training pipeline
-- model registry
-- metrics computation
-- visualizations (with/without ground truth)
-- clean model retraining workflow
-- dataset loading and preprocessing
+- モジュール型のプロジェクトアーキテクチャ
+- 再現可能なトレーニングパイプライン
+- モデルレジストリ
+- メトリクスの計算
+- 可視化（グラウンドトゥルースの有無にかかわらず）
+- クリーンなモデル再学習ワークフロー
+- データセットの読み込みと前処理
 
-See the [notebook](https://github.com/tonyjrosso/titanic-survival-model/blob/main/titanic_survival_model/notebooks/Titanic%20Survival%20Model%20demo.ipynb) for a quick walkthrough.
+**重要**: この[ノートブック](https://github.com/tonyjrosso/titanic-survival-model/blob/main/titanic_survival_model/notebooks/Titanic%20Survival%20Model%20demo.ipynb)には、プロジェクトに関する詳細な議論が記載されています。
 
-This project uses the Titanic dataset to build a logistic regression classifier predicting passenger survival.
+このプロジェクトでは、タイタニック号のデータセットを使用して、乗客の生存を予測するロジスティック回帰分類器を構築します。
 
-## Project Structure
+## プロジェクト構造
 
 ```
 titanic_survival_model/
@@ -44,30 +44,19 @@ titanic_survival_model/
 └── requirements.txt
 ```
 
-## Example Outputs
 
-The notebook walks through:
-
-- training a logistic regression model
-- computing metrics
-- visualizing ROC/PR/CM
-- monitoring score distribution
-- evaluating performance history over retraining cycles
-
-Example figures (ROC curve, PR curve, score distribution etc.) are produced using `metrics/visualization.py`.
-
-## How to Run
-1. Install dependencies
+## 実行方法
+1. 依存関係をインストールする
 ```
 pip install -r requirements.txt
 ```
 
-2. Run the demo notebook
+2. デモノートブックを実行する
 ```
 jupyter notebook notebooks/Titanic_Demo.ipynb
 ```
 
-3. Or train a new model programmatically
+3. あるいは新しいモデルをプログラムでトレーニングする
 ```
 from model.training import train
 from data.loader import load_titanic
@@ -77,21 +66,19 @@ X, y = load_titanic()
 model, metrics = train(LogisticRegression(), X, y)
 ```
 
-## Configuration
+## 構成
 
-Edit config/settings.yaml to change:
+`config/settings.yaml`を編集して、以下の設定を変更します。
+- トレーニング/テストの分割
+- ランダムシード
+- アーティファクトディレクトリ
 
-- train/test split
-- random seed
-- artifact directory
 
-This keeps your code clean and your experiments reproducible.
+## モデルアーティファクト
 
-## Model Artifacts
+トレーニングされたモデルは `model/artifacts/` に保存されます。
 
-Trained models are saved under `model/artifacts/`
+## 謝辞
 
-## Acknowledgements
-
-Dataset from:
+データセットは以下のソースから取得されました。
 > https://github.com/datasciencedojo/datasets/blob/master/titanic.csv
