@@ -44,6 +44,8 @@ titanic_survival_model/
 └── requirements.txt
 ```
 
+## アーキテクチャ図
+![alt text](https://github.com/tonyjrosso/titanic-survival-model/blob/main/titanic_survival_model/img/titanic-survival-model-architecture-wip.png?raw=true)
 
 ## 実行方法
 1. 依存関係をインストールする
